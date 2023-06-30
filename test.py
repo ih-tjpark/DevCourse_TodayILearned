@@ -1,1 +1,1 @@
-print('aㅇ')
+print('aㅇㅂ')
