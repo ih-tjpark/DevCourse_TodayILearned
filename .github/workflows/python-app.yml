@@ -35,5 +35,6 @@ jobs:
     - name: run flake8
       run: |
         pwd
+        ls
         cd /home/runner/work/project2-team1/project2-team1/airflow
         flake8 --config=.flake8
