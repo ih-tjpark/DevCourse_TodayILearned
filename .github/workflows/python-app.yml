@@ -36,5 +36,5 @@ jobs:
       run: |
         pwd
         ls
-        cd /testfolder
+        cd testfolder
         flake8 --config=.flake8
