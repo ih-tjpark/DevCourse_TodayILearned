@@ -87,5 +87,6 @@ with DAG(
         poke_interval=30,
         allowed_states=["success"],
 
+        
     )
     bigquery_create_analytics_table >> trigger
