@@ -88,5 +88,4 @@ with DAG(
         allowed_states=["success"],
 
     )
-asd
     bigquery_create_analytics_table >> trigger
