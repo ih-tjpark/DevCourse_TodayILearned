@@ -36,5 +36,5 @@ jobs:
       run: |
         pwd
         ls
-        cd /home/runner/work/project2-team1/project2-team1/airflow
+        cd /testfolder
         flake8 --config=.flake8
