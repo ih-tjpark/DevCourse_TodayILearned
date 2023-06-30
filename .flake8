@@ -1,5 +1,15 @@
 [flake8]
 
+
+########## Targets ##########
+
+# Redirect all output to the specified file.
+output-file = .flake8.log
+# Also print output to stdout if output-file has been configured.
+tee = True
+
+
+
 exclude =
     .git,
     .gitignore,
@@ -9,6 +19,38 @@ exclude =
     venv,
     .env
 
+
+
+
+########## Formatting ##########
+
+# Select the formatter used to display errors to the user.
+format = default
+
+# Print the total number of errors.
+count = True
+# Print the source code generating the error/warning in question.
+show-source = True
+# Count the number of occurrences of each error/warning code and print a report.
+statistics = True
+
+########## Rules ##########
+
+# ERROR CODE reference
+#
+# https://flake8.pycqa.org/en/latest/user/error-codes.html
+# https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes
+#
+# E/W  - PEP8 errors/warnings (pycodestyle)
+# F    - linting errors (pyflakes)
+# C    - McCabe complexity error (mccabe)
+#
+# E133 - closing bracket is missing indentation (conflicts with black)
+# E203 - whitespace before ‘:’ (conflicts with black)
+# W503 - line break before binary operator
+# F401 - module imported but unused
+# F403 - ‘from module import *’ used; unable to detect undefined names
+#
 
 ignore =
     E121,
