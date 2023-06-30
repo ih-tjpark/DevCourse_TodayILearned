@@ -59,7 +59,6 @@ excute_sql = """
         )
     LIMIT 10;
     """
-assdasd
 with DAG(
     dag_id="Daily_Bigquery_Create_Analytics",
     start_date=datetime(2023, 6, 26),
